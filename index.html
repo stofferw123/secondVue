@@ -1,0 +1,46 @@
+<head>
+    <meta charset="UTF-8" />
+    <title>Vue Mastery</title>
+    <!-- Import Styles -->
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <!-- Import Vue.js -->
+    <script src="https://unpkg.com/vue@next"></script>
+  </head>
+  <body>
+
+    <h1>String Manipulation</h1>
+    <div class="maindiv" id="v-model">
+       <input v-model="string" placeholder="input string">
+       <div>
+           <ol class="orderedlist">
+               <li>{{string}}</li>
+               <li>{{string.toUpperCase() }}</li>
+               <li>{{string.toLowerCase() }}</li>
+           </ol>
+       </div>
+       <table class="table">
+           <tr>
+               <td>1</td>
+               <td>{{string}} </td>
+           </tr>
+           <tr>
+            <td>2</td>
+            <td>{{string.toUpperCase()}} </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>{{string.toLowerCase()}} </td>
+        </tr>
+       </table>
+    </div>
+    
+    
+    <!-- Import App -->
+    <script src="./main.js"></script>
+
+    <!-- Mount App -->
+    <script>
+      const mountedApp = app.mount('app')
+    </script>
+  </body>
+</html>
